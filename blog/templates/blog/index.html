@@ -1,0 +1,8 @@
+
+{% for blog in blog_posts %}
+{{ blog.post_title }}<br/>
+{{ blog.post_text }}
+{{ blog.post_date }}<br/>
+-------<br/>
+{% endfor %}
+<a href="{% url 'new_post' %}">compose a post</a>
